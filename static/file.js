@@ -68,6 +68,8 @@ $(() => {
  	        }else{
  	        document.querySelector('.container').classList.add('start')
  	        var type = $('#id');
+		//api参考别人的：https://www.v2ex.com/t/948458#reply9
+		//api参考file.js：https://cdn.ipfsscan.io/static/file.js
   	        api = 'https://cdn.ipfsscan.io/api/v0/add?pin=false'
             let formData = new FormData();
             formData.append('file', files[i]);
@@ -144,6 +146,7 @@ $(() => {
                     return xhr;
                 },
                 success: res => {
+		    //网关参考file.js：https://cdn.ipfsscan.io/static/file.js
                     var imgSrc = 'https://ipfs.io/ipfs/' + res.Hash + "?filename=" + res.Name;
                     /* 清除input框 */
                     $('#file').val(null);

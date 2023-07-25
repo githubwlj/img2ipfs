@@ -144,7 +144,7 @@ $(() => {
                     return xhr;
                 },
                 success: res => {
-                    var imgSrc = 'https://cf-ipfs.com/ipfs/'+res.Hash
+                    var imgSrc = 'https://ipfs.rock2023.eu.org/ipfs/'+res.Hash
                     /* 清除input框 */
                     $('#file').val(null);
                     if (res.code === -1) {

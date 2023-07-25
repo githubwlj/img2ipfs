@@ -147,6 +147,7 @@ $(() => {
                 },
                 success: res => {
 		    //网关参考file.js：https://cdn.ipfsscan.io/static/file.js
+		    //网关检测：https://ipfs.github.io/public-gateway-checker/
                     var imgSrc = 'https://ipfs.io/ipfs/' + res.Hash + "?filename=" + res.Name;
                     /* 清除input框 */
                     $('#file').val(null);
